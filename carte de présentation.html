@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carte de Présentation</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <h2>Carte de Présentation Étudiant</h2>
+
+    <img src="photo de shekinah.jpg" alt="PHOTO" class="profil">
+
+    <p>
+        <strong>Nom :</strong> NGOYI NGOYI SHEKINEH <br>
+        <strong>Date de naissance :</strong> 01 janvier 2000 <br>
+        <strong>Filière :</strong> Science informatique 
+    </p>
+
+    <!-- Bouton contact -->
+    <button class="contact-btn" onclick="ouvrirContacts()">Me contacter</button>
+
+    <!-- Fenêtre des contacts -->
+    <div id="contact-box" class="contact-box">
+        <h3>Mes Contacts</h3>
+
+        <a href="mailto:ngoyishekinah19@gmail.com" class="contact-btn gmail">
+                Gmail
+            </a>
+
+            <!-- WhatsApp -->
+            <a href="https://wa.me/243975813868" class="contact-btn whatsapp">
+                WhatsApp
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://instagram.com/shekiboy19" class="contact-btn instagram">
+                Instagram
+        <button class="close-btn" onclick="fermerContacts()">Fermer</button>
+    </div>
+
+    <script>
+        function ouvrirContacts() {
+            document.getElementById("contact-box").style.display = "block";
+        }
+        function fermerContacts() {
+            document.getElementById("contact-box").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
